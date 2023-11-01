@@ -1,0 +1,94 @@
+/* Navigation bar */
+nav {
+    background-color: #272343;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 50px;
+    z-index: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    float: center;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav li a:hover {
+    background-color: #433d69 ;
+}
+
+.logo {
+    position: fixed;
+    left: 50;
+    top: 0;
+    bottom: 0;
+    width: 160px; 
+    height: 120px;
+    margin-top: 7px;
+}
+
+.active {
+    text-decoration: underline;
+
+}
+
+  
+/* Main page */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    
+}
+  
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+  
+.column {
+    margin: 10px;
+}
+  
+.column img {
+    margin: 20px 20px ;
+    float: left; 
+    width: 520px;
+    height: 320px;
+}
+
+.column figcaption {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 550;
+    font-size: large;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    left: 0;
+    right: 0;
+}

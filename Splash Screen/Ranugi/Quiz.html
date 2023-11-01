@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- To get tick and cross -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <link rel="stylesheet" href="QuizStyle.css">
+    
+</head>
+<body>
+ <!-- Navigation bar -->
+    <nav>
+        <img src="logo.png" alt="Logo" class="logo" >
+            <ul>
+            <li><a href="../Umasha/MainPage.html"> Home </a></li>
+            <li><a href="../Umasha/CommentsForm.html"> Comments </a></li>
+            <li><a href="../Nethmi/Buy Products Page/Product page.html"> Shop </a></li>
+            <li><a href="Quiz.html" class="active"> Quiz </a></li>
+            <li><a href="../Yelani/Sitemap.html"> Site Map </a></li>
+            <li><a href="../Yelani/Gallery.html"> Gallery  </a></li>
+            <li><a href="StudentDetails.html"> About us </a></li>
+            </ul>
+    </nav>
+
+    <!-- start Quiz button -->
+    <div class="start_btn">
+        <button>Start Quiz</button>
+    </div>
+    
+    <!-- Instructions -->
+    <div class="instructions">
+        <div class="info-title"><span>Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+
+        <div class="buttons">
+            <button class="quit" onclick="location.href='MainPage.html'">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    
+    <div class="quiz_box">
+        <header>
+            <div class="title">SriVoyage Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+
+        <section>
+            <div class="que_text">
+                <!-- Used java script to show questions -->
+            </div>
+
+            <div class="option_list">
+                <!-- Used java script to show options -->
+            </div>
+        </section>
+       
+<!-- Question count -->
+        <footer>
+            <div class="total_que">
+                
+            </div>
+
+            <button class="next_btn">Next</button>
+
+        </footer>
+    </div>
+
+    <!-- Result box -->
+    <div class="result_box">
+        
+        <div class="complete_text">You've completed the Quiz!</div>
+
+        <div class="score_text">
+           
+        </div>
+
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit" onclick="location.href='MainPage.html'">Quit Quiz</button>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <footer class="pageEdit">
+        <p> Copyright &copy; 2023 SriVoyage<br> Web designed by SriVoyage team 
+    <br> Editor of the page : <a href="RanugiPage.html" style="color:white;" id="editor" target="_blank"> Ranugi Thihansa </a> </p>
+      </footer>
+      
+    <script src="quiz.js"></script>
+    <script src="QuizScript.js"></script>
+</body>
+</html>

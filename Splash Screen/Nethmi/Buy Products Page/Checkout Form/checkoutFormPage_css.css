@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,  #272343 50%, #a8e6cf 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+} 
+
+
+.outer {
+    width: 60%;
+    background: #fff;
+    max-width: 700px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+
+.ordersummary {
+    width: 40%;
+    background: #fff;
+    margin-right: 40px;
+    padding: 30px;
+    max-width: 300px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tot {
+    border-top: 2px solid black;
+    font-weight: bold;
+}
+
+
+.ordersummary p {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.container {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container .left {
+    flex-basis: 50%;
+}
+
+.container .right {
+    flex-basis: 50%;
+}
+
+h3 {
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+
+}
+
+.star {
+    color: rgb(255, 5, 5);
+}
+
+.container .inputBox {
+    margin: 15px 0;
+}
+
+.container .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000)
+}
+
+
+
+form input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+
+.inputBox.success input {
+    border:1.5px solid #09c372;
+}
+
+
+.inputBox.error input {
+    border:1.5px solid #ff3860;
+}
+
+.inputBox.error .errorMsg {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #ff3860;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    width: 100%;
+    background: #34495e;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #437ab1;
+    transition: 0.3s;
+
+}

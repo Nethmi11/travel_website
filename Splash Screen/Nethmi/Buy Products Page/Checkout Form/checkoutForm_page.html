@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkoutFormPage_css.css">
+    <title>Checkout Form Page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="ordersummary">
+            <h3>ORDER SUMMARY</h3>
+            <p >Sub Total: <span id="total"></span></p>
+            <p>Shipping: <span id="shipping">$5</span></p>
+            <p class="tot">Total: <span id="tot"></span></p>
+
+        </div>
+
+        <div class="outer">
+
+            
+            <div class="container">
+
+                <div class="left">
+                    <h3>Billing Address</h3>
+                    
+                    <form>
+
+                        <div class="inputBox">
+                            <label for="name">Full Name<span class="star">*</span></label>
+                            <input type="text" placeholder="John Dear" name="name" id="name" required>
+                            <div class="errorMsg"></div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="email">Email:</label>
+                            <input type="email" placeholder="example@example.com" name="email" id="email" required>
+                            <div class="errorMsg"></div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="address">Address<span class="star">*</span></label>
+                            <input type="text" placeholder="house-street-locality" name="address" id="address" required>
+                            <div class="errorMsg"></div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="country">Country<span class="star">*</span></label>
+                            <input type="text" placeholder="Sri Lanka" name="country" id="country" required>
+                            <div class="errorMsg"></div>
+                        </div>
+
+                        <div class="flex">
+
+                            <div class="inputBox">
+                                <label for="city">City:</label>
+                                <input type="text" placeholder="Ragama" id="city">
+                            </div>
+
+                            <div class="inputBox">
+                                <label for="zip">Zip<span class="star">*</span></label>
+                                <input type="text" placeholder="123 45" id="zip">
+                                <div class="errorMsg"></div>
+                            </div>
+
+                        </div>
+                    </form>    
+
+
+                </div>
+
+                <div class="right">
+                    <h3>Payment</h3>
+
+                    <form>
+                    
+                        <div class="inputBox">
+                            <span>Cards Accepted: </span>
+                            <img src="card_img.png" alt=" credit card images">
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="namecard">Name on Card<span class="star">*</span></label>
+                            <input type="text" placeholder="mr.John Doer" name="namecard" id="namecard" required>
+                            <div class="errorMsg"></div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="creditcardnum">Credit Card Number<span class="star">*</span></label>
+                            <input type="text" placeholder="1111-2222-3333-4444" name="creditcardnum" id="creditcardnum" required>
+                            <div class="errorMsg"></div>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="month">Exp Month<span class="star">*</span></label>
+                            <input type="text" placeholder="12" name="month" id="month" required>
+                            <div class="errorMsg"></div>
+                        </div>
+
+                        <div class="flex">
+
+                            <div class="inputBox">
+                                <label for="cvv">CVV<span class="star">*</span></label>
+                                <input type="text" placeholder="123" id="cvv" required>
+                                <div class="errorMsg"></div>
+                            </div>
+
+                            <div class="inputBox">
+                                <label for="year">Exp year<span class="star">*</span></label>
+                                <input type="text" placeholder="2023" id="year" required>
+                                <div class="errorMsg"></div>
+                            </div>
+                        </div>    
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <input type="submit" id="submit-button" value="Proceed to Checkout">
+    
+ 
+        </div>
+
+    </div>
+
+    <script src="checkoutFormPage_js.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bae8e8;
+}
+
+.text{
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+}
+
+.group-members {
+   display: flex;
+   margin-top: 20px;
+   position: absolute;
+   left: 0%;
+   right: 0%;
+   justify-content: center;
+   align-items: center;
+}
+
+.member {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.member img {
+  width: 150px;
+  height: 170px;
+  border: 1px solid black;
+}
+
+.member-details {
+  text-align: center;
+  align-content: center;
+  padding: 4%;
+  display: none;
+  width: 160px;
+  color: #272343;
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    padding: 3px;
+    background-color: #272343;
+    color: white;
+}
+
+footer p{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 0%;
+}
+  
+footer a:link{
+    color: azure;
+    text-decoration: none;
+}
+  
+footer a:visited{
+    color: azure;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: rgb(60, 110, 140);
+    text-decoration: underline;
+}
+
+</style>
+</head>
+
+<body>
+<!-- Navigation Bar -->
+  <nav>
+    <img src="logo.png" alt="Logo" class="logo" >
+        <ul>
+        <li><a href="../Umasha/MainPage.html"> Home </a></li>
+        <li><a href="../Umasha/CommentsForm.html"> Comments </a></li>
+        <li><a href="../Nethmi/Buy Products Page/Product page.html"> Shop </a></li>
+        <li><a href="Quiz.html"> Quiz </a></li>
+        <li><a href="../Yelani/Sitemap.html"> Site Map </a></li>
+        <li><a href="../Yelani/Gallery.html"> Gallery  </a></li>
+        <li><a href="StudentDetails.html" class="active"> About us </a></li>
+        </ul>
+  </nav>
+
+    <div class="text">
+        <h1>Student Details</h1>
+    <p>About Us- Hover over the images for details!</p>
+
+    </div>
+    
+    <div class="group-members">
+        <div class="member">
+          <img src="images/Student1.jpeg" alt="Student 1">
+          <div class="member-details"><strong>Nethmi Gamage Role: Student 1</strong></div>
+        </div>
+        <div class="member">
+          <img src="images/Student2.jpeg" alt="Student 2">
+          <div class="member-details"><strong>Umasha Caldera Role: Student 2</strong></div>
+        </div>
+        <div class="member">
+          <img src="images/Student3.jpeg" alt="Student 3">
+          <div class="member-details"><strong>Ranugi Thihansa Role: Student 3</strong></div>
+        </div>
+        <div class="member">
+          <img src="images/Student4.jpeg" alt="Student 4">
+          <div class="member-details"><strong>Yelani Hanwella Role: Student 4</strong></div>
+        </div>
+      </div>
+
+      <footer>
+        <p> Copyright &copy; 2023 SriVoyage</p>
+        <p> Web designed by SriVoyage Team </p>
+        <p> Editor of the page : <a href="RanugiPage.html" style="color:white;" id="editor" target="_blank"> Ranugi Thihansa </a> </p>
+      </footer>
+      
+<script>
+  // Student name and role display when hover on an image.
+const members = document.querySelectorAll(".member");
+
+members.forEach(function(member) {
+  const memberDetails = member.querySelector(".member-details");
+  const memberImg = member.querySelector("img");
+
+  memberImg.addEventListener("mouseover", function() {
+    memberDetails.style.display = "block";
+  });
+
+  memberImg.addEventListener("mouseout", function() {
+    memberDetails.style.display = "none";
+  });
+});
+
+</script>
+
+</body>
+</html>

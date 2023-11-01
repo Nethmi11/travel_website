@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="4; url=Umasha\MainPage.html">
+    <title>Presentation Page</title>
+    <style>
+       
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            flex-direction: column;
+            height: 100vh;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('backgroundImage.jpg'); 
+            background-size: cover;
+        }
+
+
+        h1 {
+            border: 2px solid #fff;
+            font-size: 5rem;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            border-bottom: 1px solid #fff;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            background: rgba(0, 0, 0, 0.6);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        h1 {
+            opacity: 0;
+            animation: pop-in 0.5s forwards;
+            animation-delay: 0.5s;
+        }
+
+        ul,
+        h3 {
+            opacity: 0;
+            animation: pop-in 0.5s forwards;
+            animation-delay: 0.3s;
+        }
+
+        li {
+            padding: 10px 50px;
+        }
+
+
+        @keyframes pop-in {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            80% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="box">
+            <h1 id="heading">SRIVOYAGE</h1>
+            
+            <div class="details">
+                <h3>TEAM MEMBERS</h3><br><br>
+                <ul>
+                    <li>Nethmi Gamage</li>
+                    <li>Umasha Caldera</li>
+                    <li>Ranugi Thihansa</li>
+                    <li>Yelani Hanwella</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <img id="s" src="logowithoutbackground.png" alt="withoutbackground">
+    </div>
+    
+   
+</body>
+
+</html>

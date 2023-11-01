@@ -1,0 +1,284 @@
+body{
+   
+    width: 1500px;
+    height: 150vh;
+    font-family: Poppins,sans-serif;
+  
+  }
+  nav {
+    background-color: #272343;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 50px;
+    z-index:1000;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    float: none;
+}
+
+
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Poppins,sans-serif;
+}
+
+nav li a:hover {
+    background-color: #433d69 ;
+}
+
+nav li a:active {
+    text-decoration: underline ;
+}
+
+.logo {
+    position: fixed;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 175px; 
+    height: 120px;
+    margin-top: 7px;
+}
+
+  ul.colorchanger {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+    border: 1px;
+    border-color: #f5f5f5;
+    flex-direction: column; 
+    align-items: flex-end; 
+  }
+  
+  .colors {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    
+  }
+  
+  #blue {
+    background-color: #ffffff;
+  }
+  
+  #white {
+    background-color: #061935;
+  }
+  
+  #black {
+    background-color: #0fd281d0;
+  }
+
+  #random {
+    background-color: #cfe291;
+  }
+  
+h1{
+  text-align: center;
+  color:black;
+  text-shadow:  0.5px 0.5px #efe930;
+  text-decoration-line: underline;
+  margin: 20px 0 40px;
+  font-family: Poppins,sans-serif;
+}
+
+.gallery{
+  margin:20px auto;
+  box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, .1);
+  position: relative;
+  width: 270px;
+  height: 170px;
+  backface-visibility: hidden;
+}
+
+
+ .container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+} 
+
+.gallery img {
+width: 100%;
+height: auto;
+transition: transform 0.5s ease;
+
+}
+
+
+.gallery .large-image {
+position: absolute;
+display: inline-block;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+max-width: 90%;
+max-height: 90%;
+opacity: 0;
+} 
+
+
+.gallery a:hover .large-image {
+position: fixed;
+opacity: 1;
+transform: translate(-50%, -50%);
+top: 65%;
+left: 40%;
+width: 550px;
+z-index: 15;
+}
+
+
+p{
+  margin: 20px 0 0 600px;
+  right: 30px;
+  top: 0;
+  opacity: 1;
+  text-align: left;
+}
+
+.intro{
+  height: 300px;
+  width: 800px;
+  padding: 30px ;
+  border-radius: 5px;
+  position: fixed;
+  margin-left: 0;
+  bottom: 0;
+  right: -5000px;
+  transition: 1s;
+  background:rgb(27,27,27, .5);
+  color: white;
+  visibility: hidden;
+}
+span{
+  font-weight: bold;
+}
+
+
+.gallery:hover .intro{
+    
+   visibility: visible;
+   left: 20%;
+   top: 40%;
+   position: fixed;
+   z-index: 10;
+   border: 1px solid black;
+ }
+ 
+
+ .gallery:hover p{
+opacity: 1;
+visibility: visible;
+transform: scale(1.1 );
+transition: 1s;
+
+}
+
+.gallery:hover {
+
+margin-bottom: 370px; /* add margin to create space */
+
+}
+
+.gallery:not(:hover) + .gallery {  /* increase top of next line of images */
+
+top: calc(0 + 0 + 250px); /* height + margin + hovering image height */
+}
+
+.font-sizes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+  }
+
+.font-sizes button {
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-top: 150px;
+    margin-bottom: 5px;
+    
+}
+
+#small{
+    font-size: 14px;
+    text-shadow:  0.5px 0.5px white;
+}
+
+#medium{
+    font-size: 18px;
+    text-shadow:  0.5px 0.5px white;
+}
+
+#large{
+    font-size: 22px;
+    text-shadow:  0.5px 0.5px white;
+}
+
+.font-sizes button:focus {
+    outline: none;
+}
+
+.font-sizes button.active {
+    font-weight: bold;
+}
+
+.font-sizes button#small.active {
+    font-size: 14px;
+}
+
+.font-sizes button#medium.active {
+    font-size: 18px;
+}
+
+.font-sizes button#large.active {
+    font-size: 22px;
+}
+
+footer {
+    background-color: #272343;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 30%;
+    position:absolute;
+    height: 80px;
+    top:180%;
+    left: 0;
+    right: 0;
+    font-family: Poppins,sans-serif;
+}
+
+#editor:active {
+    text-decoration:solid;
+}
